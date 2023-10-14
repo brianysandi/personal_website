@@ -1,6 +1,3 @@
-body {
-    text-align: center;
-}
 .top-container {
     background-color: #EBE4D1;
     display: grid;
@@ -9,12 +6,11 @@ body {
     height: 100vh;
     color: #26577C;
     font-family: 'Roboto', sans-serif;
-
 }
 .title-text {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     flex-direction: column;
     font-size: 2.5rem;
     margin-left: 100px;
@@ -113,4 +109,64 @@ h3 {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     padding: 20px;
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .top-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .title-text {
+        display: block;
+        text-align: center;
+        margin: 0;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .header-image {
+        padding: 10px;
+    }
+    .header-image img {
+        width: 100%;
+    }
+    .middle-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .intro p {
+        display: block;
+        margin: 0px 50px 0px 50px;
+        text-align: justify;
+    }
+    hr {
+        margin: 50px auto 50px auto;
+    }
+    .parent {
+        display: block;
+        width: 275px;
+        margin-top: 30px;
+    }
+    .parent img {
+        margin-bottom: 20px;
+    }
+    .hardware img {
+        height: 140px;
+        width: 185px;
+    }
+    .networking {
+        margin-bottom: 75px;
+    }
+    .contact {
+        display: block;
+        width: 275px;
+        text-align: center;
+        margin: 0px auto 0px auto;
+    }
+    .contact h3 {
+        margin: 20px 0px;
+    }
+    .contact-message {
+        display: block;
+        margin: 0px auto 20px auto;
+        text-align: justify;
+    }
 }
